@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+html, body {
+    height: 100%;
+}
+  
+body {
+    font-size: $fs-md; 
+    font-family: $ff-primary;
+    line-height: 1.7;
+    font-weight: 400;
+    color: $dark;
+    background-color: $white;
+  
+    &.loading{
+      visibility: var(--body-visibility, hidden);
+    }
+}
+  
+p{
+    margin-bottom: 1rem;
+}
+  
+  
+svg, img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+  
+
+
+// List Social
+.list-social{
+    .list-social-item{
+        @extend .d-inline-flex, .align-items-center, .justify-content-center, .bg-dark, .text-white, .rounded-circle, .fs-2xl;
+        min-width: 52px;
+        width: 52px;
+        height: 52px;
+        @include transition();
+
+        &:hover{
+            @extend .bg-danger;
+            box-shadow: 0px 15px 30px rgba(233, 16, 93, 0.1);
+        }
+    }
+}
+

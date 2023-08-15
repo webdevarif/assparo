@@ -1,0 +1,222 @@
+.hero-section{
+
+    .shape__1{
+        position: absolute;
+        top: 60vh;
+        left: 0;
+    }
+    .shape__2{
+        position: absolute;
+        bottom: 10%;
+        left: 40%;
+    }
+
+    .shape__3{
+        position: absolute;
+        top: 20%;
+        left: 45%;
+    }
+}
+
+.adsparo-features{
+
+    &__content-left{
+        padding-left: 60px;
+        padding-bottom: 60px;
+        padding-top: 10px;
+    }
+    &__content-right{
+        padding-left: 40px;
+        padding-bottom: 60px;
+        padding-top: 10px;
+    }
+    
+    &__icon{
+        @extend .d-inline-block, .position-relative, .mt-4;
+
+        &.right{
+            margin-left: -25px;
+        }
+    }
+}
+
+.pricing-area{
+    @extend .position-relative;
+    z-index: -1;
+
+    &:before{
+        position: absolute; width: 100%; height: 54vh; top: 0; left: 0; content: ""; background-color: $primary-light; border-radius: 4rem; z-index: -1;
+    }
+
+    .shape__1{   
+        @extend .position-absolute, .start-0;
+        top: 10rem;
+    }
+
+    .shape__2{   
+        @extend .position-absolute;
+        right: 3%;
+        top: 7rem;
+    }
+}
+
+.card-rating{
+    box-shadow: 0px 11.1292px 55.6459px -2.7823px rgba(6, 12, 59, 0.08);
+    
+    &__users{
+        @extend .position-absolute, .start-0;
+        top: -50px;
+    }
+}
+
+.google-extension{
+    
+
+    &__banner {
+        display: inline-flex;
+        position: relative;
+        justify-content: end;
+
+        @include media-breakpoint-up(lg){
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-height: 80%;
+            max-width: 50%;
+            height: auto;
+        }
+    }
+
+    .shape__1 {
+        position: absolute;
+        left: 4%;
+        top: 0;
+    }
+
+    &__downloads {
+        display: inline-flex;
+        flex-direction: column;
+        background: $primary;
+        position: absolute;
+        left: -30px;
+        top: -30px;
+        min-width: 120px;
+        height: 120px;
+        width: 11px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 1;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            display: block;
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            background: $primary;
+            border-radius: 50%;
+            animation: pulse-border 1500ms ease-out infinite;
+            z-index: -1;
+        }
+    }
+}
+
+
+.growing-industry{
+
+    &__map{
+        @extend .position-relative;
+    }
+
+    .map_sale{
+        @extend .bg-white, .px-4, .py-2, .rounded-3, .fw-bold, .position-absolute;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: $danger;
+            border-radius: 50%;
+            animation: pulse-border 1500ms ease-out infinite;
+            z-index: 2;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: -7px;
+            top: -7px;
+            display: block;
+            width: 14px;
+            height: 14px;
+            background: $danger;
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        &.sale__1{ left: 25%; top: 15%; }
+        &.sale__2{ left: 14%; top: 34%; }
+        &.sale__3{ left: 27%; bottom: 25%; }
+        &.sale__4{ left: 46%; bottom: 58%; }
+        &.sale__5{ right: 33%; top: 12%; }
+        &.sale__6{ right: 36%; bottom: 22%;}
+        &.sale__7{ right: 16%; top: 15%;}
+        &.sale__8{ right: 18%; top: 40%;}
+        &.sale__9{  right: 2%; bottom: 14%;}
+    }
+
+
+    .community-users{
+        &-button{
+            margin-top: -50px;
+
+            @include media-breakpoint-up(lg){
+                margin-top: -110px;
+            }
+        }
+
+        &__img{ @extend .position-absolute; }
+
+        .user__1{ 
+            left: 5%; 
+            top: 15%; 
+            max-width: 3.5vw; 
+            min-width: 3rem;
+        }
+        .user__2{ 
+            left: 28%; 
+            bottom: 30%; 
+            max-width: 3.8vw;
+            min-width: 3rem; 
+        }
+        .user__3{ 
+            top: 10%; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            max-width: 4.7vw; 
+            min-width: 4rem;
+        }
+        .user__4{ 
+            top: 40%; 
+            right: 25%; 
+            max-width: 3.7vw; 
+            min-width: 3rem;
+        }
+        .user__5{ 
+            right: 7%; 
+            top: 30%; 
+            max-width: 3.3vw;
+            min-width: 3rem;
+        }
+    }
+}
