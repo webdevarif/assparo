@@ -3,7 +3,7 @@
       
 	$(window).on('load', function () {
         preloader();
-		// aosAnimation();
+		aosAnimation();
 	});
 
     $(document).ready(function() {
@@ -57,14 +57,14 @@
 	/*=============================================
 		=    		 Aos Active  	         =
 	=============================================*/
-	// function aosAnimation() {
-	// 	AOS.init({
-	// 		duration: 1000,
-	// 		mirror: true,
-	// 		once: true,
-	// 		disable: 'mobile',
-	// 	});
-	// }
+	function aosAnimation() {
+		AOS.init({
+			duration: 1000,
+			mirror: true,
+			once: true,
+			disable: 'mobile',
+		});
+	}
 
 	/*=============================================
 		=    		 Scroll Top Button	         =
@@ -75,4 +75,33 @@
         }, 1200);
     });
 
+
+//map trigger
+
+
+//map-test
+var lastEq = $('.map_sale').length;
+var currentEq = 0;
+var myVar;
+
+function myMega() {
+var myVar = setInterval(myLoop, 100);
+}
+
+function myLoop() {
+
+if (currentEq == lastEq) {
+currentEq = 0;
+} else {
+currentEq++;
+}
+
+$('.map_sale').eq(currentEq).toggleClass('is-pulsing');
+setTimeout(() => {  
+	$('.is-pulsing').eq(currentEq).removeClass('is-pulsing');
+}, 4000);
+}
+
+myMega();
+	
 })(jQuery);
