@@ -1,3 +1,6 @@
+
+
+
 (function ($) {
 	"use strict";
       
@@ -5,6 +8,7 @@
         preloader();
 		aosAnimation();
 	});
+
 
     $(document).ready(function() {
         if (window.matchMedia("(min-width: 991px)").matches) {

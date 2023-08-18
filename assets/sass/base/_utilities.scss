@@ -80,11 +80,7 @@
 }
 
 .features-item__banner-left {
-    padding: 50px 0px;
-
-    @include media-breakpoint-up(lg){
-        padding: 50px 0px 40px 70px;
-    }
+    padding: 50px 0 100px 70px;
 }
 
 
