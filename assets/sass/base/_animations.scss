@@ -9,62 +9,62 @@
     }
   }
 
-  @keyframes heroshape1__line1 {
-    from {
-      stroke-dashoffset: 364;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
+  // @keyframes heroshape1__line1 {
+  //   from {
+  //     stroke-dashoffset: 364;
+  //   }
+  //   to {
+  //     stroke-dashoffset: 0;
+  //   }
+  // }
   
 
-  [data-aos=hero-shape-1] {
-    .line-1 {
-      stroke-dasharray: 12, 12;
-    }
+  // [data-aos=hero-shape-1] {
+  //   .line-1 {
+  //     stroke-dasharray: 12, 12;
+  //   }
     
-    &.aos-animate {      
-      .line-1 {
-        animation: heroshape1__line1 1.5s alternate linear forwards;
-      }
-    }
-  }
+  //   &.aos-animate {      
+  //     .line-1 {
+  //       animation: heroshape1__line1 1.5s alternate linear forwards;
+  //     }
+  //   }
+  // }
 
 
 
 
-  [data-aos=hero-banner] {
-    .rect-rocket {
-      opacity: 0;
-      transform: translate(70px, 400px) rotate(22deg);
-    }
+  // [data-aos=hero-banner] {
+  //   .rect-rocket {
+  //     opacity: 0;
+  //     transform: translate(70px, 400px) rotate(22deg);
+  //   }
 
-    .line-1{
-      stroke-dashoffset: 200;
-      stroke-dasharray: 200;
-    }
+  //   .line-1{
+  //     stroke-dashoffset: 200;
+  //     stroke-dasharray: 200;
+  //   }
     
-    &.aos-animate {      
-      .rect-rocket {
-        animation: 1s herobanner__rectRocket forwards;
-        animation-timing-function: ease-in-out;
-      }
+  //   &.aos-animate {      
+  //     .rect-rocket {
+  //       animation: 1s herobanner__rectRocket forwards;
+  //       animation-timing-function: ease-in-out;
+  //     }
       
-      .line-1{
-        stroke-dashoffset: 0;
-        stroke-dasharray: 0;
-      }
-    }
-  }
+  //     .line-1{
+  //       stroke-dashoffset: 0;
+  //       stroke-dasharray: 0;
+  //     }
+  //   }
+  // }
   
-  @keyframes herobanner__rectRocket {
-    0% {
-      opacity: 0;
-      transform: translate(70px, 400px) rotate(22deg);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(70px, -150px) rotate(22deg);
-    }
-  }
+  // @keyframes herobanner__rectRocket {
+  //   0% {
+  //     opacity: 0;
+  //     transform: translate(70px, 400px) rotate(22deg);
+  //   }
+  //   100% {
+  //     opacity: 1;
+  //     transform: translate(70px, -150px) rotate(22deg);
+  //   }
+  // }

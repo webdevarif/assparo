@@ -233,6 +233,12 @@
             position: absolute;
         }
 
+        svg{
+            width: 100%;
+            height: auto;
+            margin-left: 1.5vw;
+        }
+
         &__content{
             position: absolute;
             left: 50%;
