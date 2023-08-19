@@ -7,6 +7,10 @@
         left: 0;
         max-width: 6vw;
         min-width: 40px;
+        z-index: -1;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
     }
     .shape__2{
         position: absolute;
@@ -18,7 +22,7 @@
             left: 40%;
         }
         @include media-breakpoint-down(lg){
-            right: 5%;
+            display: none;
         }
     }
 
@@ -32,8 +36,7 @@
             top: 20%;
         }
         @include media-breakpoint-down(lg){
-            right: 5%;
-            top: 14%;
+            display: none;
         }
     }
     .hero-banner__svg {
@@ -48,6 +51,11 @@
             position: absolute;
             left: 24%;
             top: 22%;
+            @include media-breakpoint-down(lg){
+                left: 28%;
+                top: 30%;
+                max-width: 43%;
+            }
         }
 
         .shape-1{
@@ -55,6 +63,17 @@
             left: -24%;
             top: 13%;
             max-width: 45%;
+
+            @include media-breakpoint-between(lg, xxl){
+                left: -5%;
+                top: 14%;
+                max-width: 30%;
+            }
+            @include media-breakpoint-down(lg){
+                left: -12%;
+                top: 25%;
+                max-width: 36%;
+            }
 
             img{
                 box-shadow: 0px 11.8222px 59.1111px -2.95556px rgba(6, 12, 59, 0.08);
@@ -66,6 +85,18 @@
             left: -26%;
             top: 60%;
             max-width: 80%;
+            @include media-breakpoint-between(lg, xxl){
+                left: -15%;
+                top: 60%;
+                max-width: 60%;
+            }
+            
+            @include media-breakpoint-down(lg){
+                left: -12%;
+                top: 75%;
+                max-width: 60%;
+            }
+
             img{
                 box-shadow: 30px 36px 80px rgba(120,120,120,.25);
                 border-radius: 20px;
@@ -76,6 +107,11 @@
             left: 47%;
             bottom: -10%;
             max-width: 80%;
+            @include media-breakpoint-down(lg){
+                left: 50%;
+                bottom: -20%;
+                max-width: 38%;
+            }
         }
     }
 }
@@ -101,9 +137,13 @@
     &__icon{
         @extend .d-inline-block, .position-relative, .mt-4;
         
-        @include media-breakpoint-down(xl){
+        @include media-breakpoint-between(md, xl){
+            max-width: 5vw;
+            min-width: 40px;
+        }
+        @include media-breakpoint-down(md){
             max-width: 10vw;
-            min-width: 65px;
+            min-width: 40px;
         }
 
         &.right{
@@ -116,9 +156,19 @@
     .shape__filter-activity{
         position: absolute;
         top: 25%;
-        left: -20%;
+        left: -15%;
         z-index: 2;
         max-width: 47%;
+        @include media-breakpoint-between(lg, xxl){
+            top: 40%;
+            left: -5%;
+            max-width: 30%;
+        }
+        @include media-breakpoint-down(lg){
+            top: 40%;
+            left: 0%;
+            max-width: 30%;
+        }
     
         img{
           box-shadow: 30px 36px 80px rgba(120, 120, 120, 0.25);
@@ -128,10 +178,14 @@
 
     .shape__sort-by{
         position: absolute;
-        bottom: -15%;
+        bottom: -12%;
         right: -12%;
         z-index: 2;
-        max-width: 35%;
+        max-width: 41%;
+        
+        @include media-breakpoint-down(lg){
+            right: -8%;
+        }
     
         img{
             box-shadow: 0px 4.22px 39.5625px #C0DDDF;
@@ -141,11 +195,23 @@
       
     .shape__analytics{
         position: absolute;
-        top: 25%;
-        right: -20%;
+        top: 30%;
+        right: -14%;
         z-index: 2;
-        max-width: 47%;
+        max-width: 41%;
     
+        @include media-breakpoint-between(lg, xl){
+            top: 40%;
+            right: -15%;
+            z-index: 2;
+            max-width: 35%;
+        }
+    
+        @include media-breakpoint-down(lg){
+            right: -8%;
+            max-width: 30%;
+        }
+
         img{
             box-shadow: -2.74548px 30.2003px 90.6009px -26.0821px rgba(131, 141, 145, 0.67);
             border-radius: 13.041px;
@@ -154,14 +220,21 @@
       
     .shape__productivity{
         position: absolute;
-        bottom: -15%;
+        bottom: -30%;
         right: -15%;
         z-index: 2;
-        max-width: 73%;
+        max-width: 80%;
     
-        img{
-            box-shadow: -25.0685px 30.0822px 66.8493px rgba(120, 120, 120, 0.25);
-            border-radius: 16.7123px;
+        @include media-breakpoint-between(lg, xl){
+            bottom: -40%;
+            right: -15%;
+            z-index: 2;
+            max-width: 80%;
+        }
+    
+        @include media-breakpoint-down(lg){
+            right: -8%;
+            max-width: 60%;
         }
     }
 }
@@ -179,6 +252,9 @@
         top: 10rem;
         max-width: 9vw;
         min-width: 60px;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
     }
 
     .shape__2{   
@@ -187,6 +263,9 @@
         top: 7rem;
         max-width: 9vw;
         min-width: 60px;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
     }
     .pricing-card{
         transition: 0.2s ease-in-out;
@@ -231,6 +310,10 @@
         min-width: 100px;
         max-width: 10vw;
         height: auto;
+
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
     }
 
     &__downloads {
@@ -240,13 +323,17 @@
         position: absolute;
         left: -30px;
         top: -30px;
-        min-width: 120px;
-        height: 120px;
-        width: 11px;
+        min-width: var(--google-extension-download-size, 90px);
+        height: var(--google-extension-download-size, 90px);
+        width: var(--google-extension-download-size, 90px);
         align-items: center;
         justify-content: center;
         border-radius: 50%;
         z-index: 1;
+
+        @include media-breakpoint-up(lg){
+            --google-extension-download-size: 120px;
+        }
 
         &:before {
             content: "";
@@ -449,4 +536,4 @@
 .type-split > .word {
     clip-path: inset(0 0 0 0);
     overflow: hidden;
-  }
+}

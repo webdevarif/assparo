@@ -8,7 +8,6 @@
     <!-- Custom Files -->
     <link rel="stylesheet" href="../assets/css/aos.css">
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
-    <!-- <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css"> -->
     <link rel="stylesheet" href="../assets/css/fontawesome-v6.min.css">
     <link rel="stylesheet" href="../assets/css/fontawesome-v6-sharp-solid.css">
     <link rel="stylesheet" href="../assets/css/magnific-popup.css">
@@ -200,28 +199,126 @@
           </nav>
     </header>
 
-
     <!--  // Hero Sections
     ================================================== -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
+        <div class="offcanvas-header border-bottom">
             <!-- Logo Area -->
             <a class="navbar-brand" href="#">
                 <img src="../assets/images/logo.png" alt="" class="img-fluid">
             </a>
+            <!-- Close Button -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
         </div>
 
         <div class="offcanvas-body">
             <ul class="list-unstyled">
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Chrome Extension</a></li>
+                <li class="offcanvas__dropdown">
+                    <a class="offcanvas__link" href="#">Features <span class="ms-auto fal fa-angle-down"></span></a>
+                  
+                    <div class="offcanvas__dropdown-menu">
+                        <div class="card border-0">
+                            <div class="">
+                                <ul class="list-unstyled list-group">
+                                    <!-- Single Item -->
+                                    <li class="list-group-item d-flex align-items-center gap-3">
+                                        <span style="max-width: 40px;">
+                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="57" height="57" rx="9" fill="#FFE9F1"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.2 28.5C40.4032 28.5 43 25.9256 43 22.75C43 19.5744 40.4032 17 37.2 17C34.4975 17 32.2266 18.8325 31.5827 21.3125H15.45C14.6492 21.3125 14 21.9561 14 22.75C14 23.5439 14.6492 24.1875 15.45 24.1875H31.5827C32.2266 26.6675 34.4975 28.5 37.2 28.5ZM34.3 22.75C34.3 24.3378 35.5983 25.625 37.2 25.625C38.8017 25.625 40.1 24.3378 40.1 22.75C40.1 21.1622 38.8017 19.875 37.2 19.875C35.5983 19.875 34.3 21.1622 34.3 22.75ZM14 34.25C14 31.0744 16.5967 28.5 19.8 28.5C22.5026 28.5 24.7734 30.3325 25.4173 32.8125H41.55C42.3508 32.8125 43 33.4561 43 34.25C43 35.0439 42.3508 35.6875 41.55 35.6875H25.4173C24.7734 38.1675 22.5026 40 19.8 40C16.5967 40 14 37.4256 14 34.25ZM22.7 34.25C22.7 32.6621 21.4016 31.375 19.8 31.375C18.1984 31.375 16.9 32.6621 16.9 34.25C16.9 35.8379 18.1984 37.125 19.8 37.125C21.4016 37.125 22.7 35.8379 22.7 34.25Z" fill="#E9105D"/>
+                                            </svg>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-0 fs-lg lh-sm ff-secondary fw-bolder">Filter By</h5>
+                                            <p class="mb-0 fs-lg-lg">Gain valuable insights by filtering</p>
+                                        </div>
+                                    </li>
+                                    <!-- Single Item -->
+                                    <li class="list-group-item d-flex align-items-center gap-3">
+                                        <span style="max-width: 40px;">
+                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="57" height="57" rx="9" fill="#FFE9F1"/>
+                                                <path d="M41.7517 32.0116C41.5284 31.7883 41.2255 31.6629 40.9097 31.6629C40.594 31.6629 40.2911 31.7883 40.0678 32.0116L36.146 35.9333V17.3716C36.146 17.0557 36.0206 16.7528 35.7972 16.5295C35.5739 16.3061 35.271 16.1807 34.9551 16.1807C34.6393 16.1807 34.3364 16.3061 34.113 16.5295C33.8897 16.7528 33.7642 17.0557 33.7642 17.3716V35.9333L29.8425 32.0116C29.6179 31.7947 29.3171 31.6746 29.0048 31.6773C28.6925 31.6801 28.3938 31.8053 28.173 32.0261C27.9522 32.2469 27.827 32.5456 27.8243 32.8579C27.8216 33.1701 27.9416 33.471 28.1585 33.6956L34.1131 39.6502C34.2238 39.7611 34.3552 39.8491 34.4999 39.9091C34.6446 39.9692 34.7997 40.0001 34.9563 40.0001C35.113 40.0001 35.2681 39.9692 35.4128 39.9091C35.5574 39.8491 35.6889 39.7611 35.7995 39.6502L41.7541 33.6956C41.9771 33.4719 42.102 33.1689 42.1016 32.8531C42.1012 32.5373 41.9753 32.2346 41.7517 32.0116Z" fill="#E9105D"/>
+                                                <path d="M29.8424 22.4845L23.8878 16.5299C23.7769 16.4188 23.6449 16.3309 23.4996 16.2715C23.2082 16.151 22.881 16.151 22.5897 16.2715C22.4444 16.3309 22.3124 16.4188 22.2015 16.5299L16.2468 22.4845C16.0235 22.7081 15.8982 23.0113 15.8984 23.3273C15.8987 23.6434 16.0244 23.9464 16.248 24.1697C16.4717 24.393 16.7748 24.5183 17.0909 24.5181C17.4069 24.5179 17.7099 24.3921 17.9332 24.1685L21.8549 20.2468V38.8085C21.8549 39.1244 21.9804 39.4273 22.2037 39.6506C22.4271 39.874 22.73 39.9994 23.0458 39.9994C23.3617 39.9994 23.6646 39.874 23.8879 39.6506C24.1113 39.4273 24.2368 39.1244 24.2368 38.8085V20.2468L28.1585 24.1685C28.3831 24.3854 28.6839 24.5055 28.9962 24.5027C29.3084 24.5 29.6071 24.3748 29.8279 24.154C30.0487 23.9332 30.174 23.6345 30.1767 23.3222C30.1794 23.01 30.0594 22.7091 29.8424 22.4845Z" fill="#E9105D"/>
+                                            </svg>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-0 fs-lg lh-sm ff-secondary fw-bolder">Sort By</h5>
+                                            <p class="mb-0 fs-lg-lg">Gain valuable insights by filtering</p>
+                                        </div>
+                                    </li>
+                                    <!-- Single Item -->
+                                    <li class="list-group-item d-flex align-items-center gap-3">
+                                        <span style="max-width: 40px;">
+                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="57" height="57" rx="9" fill="#FFE9F1"/>
+                                                <path d="M27.5676 13C20.6417 13 15 18.6417 15 25.5676C15 32.4934 20.6417 38.1461 27.5676 38.1461C30.5258 38.1461 33.2465 37.1094 35.3967 35.3881L40.6316 40.6203C40.8958 40.8735 41.2486 41.0132 41.6145 41.0095C41.9805 41.0057 42.3304 40.8589 42.5893 40.6003C42.8483 40.3417 42.9957 39.992 42.9999 39.6261C43.0042 39.2602 42.8649 38.9071 42.6121 38.6426L37.3772 33.4077C39.0999 31.2542 40.1378 28.5292 40.1378 25.5676C40.1378 18.6417 34.4934 13 27.5676 13ZM27.5676 15.7934C32.9837 15.7934 37.3417 20.1514 37.3417 25.5676C37.3417 30.9837 32.9837 35.3527 27.5676 35.3527C22.1514 35.3527 17.7934 30.9837 17.7934 25.5676C17.7934 20.1514 22.1514 15.7934 27.5676 15.7934Z" fill="#E9105D"/>
+                                            </svg>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-0 fs-lg lh-sm ff-secondary fw-bolder">Search By</h5>
+                                            <p class="mb-0 fs-lg-lg">Gain valuable insights by filtering</p>
+                                        </div>
+                                    </li>
+                                    <!-- Single Item -->
+                                    <li class="list-group-item d-flex align-items-center gap-3">
+                                        <span style="max-width: 40px;">
+                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="57" height="57" rx="9" fill="#FFE9F1"/>
+                                                <path d="M13.0006 41.8706H44.9462V44.0003H13.0006V41.8706Z" fill="#E9105D"/>
+                                                <path d="M16.1952 38.6757C16.8173 38.6777 17.4263 38.4974 17.9471 38.1571C18.4678 37.8168 18.8775 37.3314 19.1255 36.7609C19.3734 36.1903 19.4488 35.5596 19.3423 34.9467C19.2358 34.3338 18.952 33.7655 18.5261 33.3121L23.9771 24.7379C24.6831 24.9191 25.4308 24.8389 26.0823 24.5121L30.3577 28.7886C30.1493 29.2147 30.0401 29.6825 30.0382 30.1569C30.0382 31.0042 30.3748 31.8167 30.9739 32.4158C31.573 33.0149 32.3855 33.3515 33.2328 33.3515C34.08 33.3515 34.8926 33.0149 35.4917 32.4158C36.0908 31.8167 36.4274 31.0042 36.4274 30.1569C36.4254 29.4131 36.1615 28.6938 35.682 28.1252L41.2192 18.3903C41.968 18.5208 42.7388 18.3821 43.3952 17.9988C44.0515 17.6155 44.5511 17.0123 44.8054 16.296C45.0597 15.5797 45.0523 14.7965 44.7845 14.0851C44.5168 13.3738 44.0059 12.7801 43.3425 12.4092C42.679 12.0383 41.9057 11.9142 41.1595 12.0588C40.4133 12.2034 39.7423 12.6073 39.2654 13.1992C38.7884 13.791 38.5363 14.5325 38.5536 15.2924C38.5709 16.0523 38.8565 16.7815 39.36 17.351L33.8483 27.0252C33.6456 26.9845 33.4395 26.9634 33.2328 26.9624C32.7584 26.9642 32.2906 27.0734 31.8645 27.2818L27.5891 23.0064C27.7975 22.5803 27.9067 22.1125 27.9085 21.6381C27.9085 20.7909 27.572 19.9783 26.9729 19.3792C26.3738 18.7801 25.5612 18.4436 24.714 18.4436C23.8667 18.4436 23.0542 18.7801 22.4551 19.3792C21.856 19.9783 21.5194 20.7909 21.5194 21.6381C21.522 22.341 21.7588 23.0229 22.1924 23.5761L16.6264 32.3303C16.4838 32.306 16.3397 32.2914 16.1952 32.2866C15.3479 32.2866 14.5354 32.6232 13.9363 33.2223C13.3372 33.8214 13.0006 34.6339 13.0006 35.4812C13.0006 36.3284 13.3372 37.141 13.9363 37.7401C14.5354 38.3392 15.3479 38.6757 16.1952 38.6757ZM33.2328 31.2218C33.0222 31.2218 32.8163 31.1593 32.6412 31.0423C32.4661 30.9253 32.3296 30.759 32.249 30.5644C32.1684 30.3699 32.1473 30.1557 32.1884 29.9492C32.2295 29.7426 32.3309 29.5529 32.4798 29.404C32.6288 29.255 32.8185 29.1536 33.0251 29.1125C33.2316 29.0714 33.4457 29.0925 33.6403 29.1731C33.8349 29.2537 34.0012 29.3902 34.1182 29.5653C34.2352 29.7404 34.2976 29.9463 34.2976 30.1569C34.2976 30.4393 34.1855 30.7102 33.9858 30.9099C33.7861 31.1096 33.5152 31.2218 33.2328 31.2218ZM41.7516 14.1841C41.9622 14.1841 42.1681 14.2466 42.3432 14.3636C42.5183 14.4806 42.6548 14.6469 42.7354 14.8415C42.816 15.0361 42.8371 15.2502 42.796 15.4567C42.7549 15.6633 42.6535 15.853 42.5046 16.002C42.3557 16.1509 42.1659 16.2523 41.9594 16.2934C41.7528 16.3345 41.5387 16.3134 41.3441 16.2328C41.1495 16.1522 40.9832 16.0157 40.8662 15.8406C40.7492 15.6655 40.6868 15.4596 40.6868 15.249C40.6868 14.9666 40.7989 14.6957 40.9986 14.496C41.1983 14.2963 41.4692 14.1841 41.7516 14.1841ZM24.714 20.5733C24.9246 20.5733 25.1305 20.6357 25.3056 20.7527C25.4807 20.8697 25.6172 21.036 25.6978 21.2306C25.7784 21.4252 25.7995 21.6393 25.7584 21.8459C25.7173 22.0524 25.6159 22.2422 25.4669 22.3911C25.318 22.54 25.1283 22.6414 24.9217 22.6825C24.7152 22.7236 24.5011 22.7025 24.3065 22.6219C24.1119 22.5413 23.9456 22.4048 23.8286 22.2297C23.7116 22.0546 23.6491 21.8487 23.6491 21.6381C23.6491 21.3557 23.7613 21.0848 23.961 20.8851C24.1607 20.6854 24.4316 20.5733 24.714 20.5733ZM16.1952 34.4163C16.4058 34.4163 16.6117 34.4788 16.7868 34.5958C16.9619 34.7128 17.0984 34.8791 17.179 35.0737C17.2596 35.2683 17.2806 35.4824 17.2396 35.6889C17.1985 35.8955 17.0971 36.0852 16.9481 36.2341C16.7992 36.3831 16.6095 36.4845 16.4029 36.5256C16.1963 36.5667 15.9822 36.5456 15.7877 36.465C15.5931 36.3844 15.4268 36.2479 15.3098 36.0728C15.1928 35.8977 15.1303 35.6918 15.1303 35.4812C15.1303 35.1988 15.2425 34.9279 15.4422 34.7282C15.6419 34.5285 15.9127 34.4163 16.1952 34.4163Z" fill="#E9105D"/>
+                                            </svg>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-0 fs-lg lh-sm ff-secondary fw-bolder">Analytics</h5>
+                                            <p class="mb-0 fs-lg-lg">Gain valuable insights by filtering</p>
+                                        </div>
+                                    </li>
+                                    <!-- Single Item -->
+                                    <li class="list-group-item d-flex align-items-center gap-3">
+                                        <span style="max-width: 40px;">
+                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="57" height="57" rx="9" fill="#FFE9F1"/>
+                                                <path d="M39.1419 26.0936H31.5039C30.9133 26.0929 30.347 25.8579 29.9294 25.4403C29.5118 25.0227 29.2768 24.4564 29.2761 23.8658V16.2278C29.2768 15.6371 29.5118 15.0709 29.9294 14.6533C30.347 14.2357 30.9133 14.0007 31.5039 14H39.1419C39.7326 14.0007 40.2988 14.2357 40.7164 14.6533C41.1341 15.0709 41.369 15.6371 41.3697 16.2278V23.8658C41.369 24.4564 41.1341 25.0227 40.7164 25.4403C40.2988 25.8579 39.7326 26.0929 39.1419 26.0936ZM31.5039 15.9095C31.4195 15.9097 31.3387 15.9433 31.279 16.0029C31.2194 16.0626 31.1858 16.1434 31.1856 16.2278V23.8658C31.1858 23.9502 31.2194 24.031 31.279 24.0907C31.3387 24.1503 31.4195 24.1839 31.5039 24.1841H39.1419C39.2263 24.1839 39.3072 24.1503 39.3668 24.0907C39.4265 24.031 39.46 23.9502 39.4602 23.8658V16.2278C39.46 16.1434 39.4265 16.0626 39.3668 16.0029C39.3072 15.9433 39.2263 15.9097 39.1419 15.9095H31.5039Z" fill="#E9105D"/>
+                                                <path d="M35.3232 42C35.0306 42.0006 34.7409 41.9434 34.4706 41.8316C34.2003 41.7198 33.9547 41.5556 33.7481 41.3486L29.2975 36.898C28.8805 36.4799 28.6462 35.9135 28.6462 35.3229C28.6462 34.7324 28.8805 34.1659 29.2975 33.7478L33.7481 29.2972C34.166 28.8799 34.7325 28.6455 35.3232 28.6455C35.9138 28.6455 36.4803 28.8799 36.8983 29.2972L41.3488 33.7478C41.7662 34.1658 42.0006 34.7323 42.0006 35.3229C42.0006 35.9135 41.7662 36.48 41.3488 36.898L36.8983 41.3486C36.6916 41.5556 36.4461 41.7198 36.1758 41.8316C35.9055 41.9434 35.6157 42.0006 35.3232 42ZM35.3232 30.5541C35.2814 30.554 35.2399 30.5622 35.2013 30.5782C35.1627 30.5942 35.1276 30.6177 35.0982 30.6473L30.6476 35.0979C30.618 35.1274 30.5946 35.1625 30.5786 35.2011C30.5626 35.2397 30.5544 35.2811 30.5544 35.3229C30.5544 35.3647 30.5626 35.4061 30.5786 35.4447C30.5946 35.4833 30.618 35.5184 30.6476 35.5479L35.0982 39.9985C35.1277 40.028 35.1628 40.0515 35.2014 40.0675C35.24 40.0835 35.2814 40.0917 35.3232 40.0917C35.365 40.0917 35.4063 40.0835 35.445 40.0675C35.4836 40.0515 35.5186 40.028 35.5482 39.9985L39.9987 35.5479C40.0283 35.5184 40.0518 35.4833 40.0678 35.4447C40.0838 35.4061 40.092 35.3647 40.092 35.3229C40.092 35.2811 40.0838 35.2397 40.0678 35.2011C40.0518 35.1625 40.0283 35.1274 39.9987 35.0979L35.5482 30.6473C35.5187 30.6177 35.4836 30.5942 35.445 30.5782C35.4064 30.5622 35.365 30.554 35.3232 30.5541Z" fill="#E9105D"/>
+                                                <path d="M23.8658 26.0936H16.2278C15.6371 26.0929 15.0709 25.8579 14.6533 25.4403C14.2357 25.0227 14.0007 24.4564 14 23.8658V16.2278C14.0007 15.6371 14.2357 15.0709 14.6533 14.6533C15.0709 14.2357 15.6371 14.0007 16.2278 14H23.8658C24.4564 14.0007 25.0227 14.2357 25.4403 14.6533C25.8579 15.0709 26.0929 15.6371 26.0936 16.2278V23.8658C26.0929 24.4564 25.8579 25.0227 25.4403 25.4403C25.0227 25.8579 24.4564 26.0929 23.8658 26.0936ZM16.2278 15.9095C16.1434 15.9097 16.0626 15.9433 16.0029 16.0029C15.9433 16.0626 15.9097 16.1434 15.9095 16.2278V23.8658C15.9097 23.9502 15.9433 24.031 16.0029 24.0907C16.0626 24.1503 16.1434 24.1839 16.2278 24.1841H23.8658C23.9502 24.1839 24.031 24.1503 24.0907 24.0907C24.1503 24.031 24.1839 23.9502 24.1841 23.8658V16.2278C24.1839 16.1434 24.1503 16.0626 24.0907 16.0029C24.031 15.9433 23.9502 15.9097 23.8658 15.9095H16.2278Z" fill="#E9105D"/>
+                                                <path d="M23.8661 41.37H16.228C15.6374 41.3692 15.0712 41.1343 14.6535 40.7167C14.2359 40.299 14.001 39.7328 14.0002 39.1422V31.5041C14.001 30.9135 14.2359 30.3473 14.6535 29.9297C15.0712 29.512 15.6374 29.2771 16.228 29.2764H23.8661C24.4567 29.2771 25.0229 29.512 25.4405 29.9297C25.8582 30.3473 26.0931 30.9135 26.0938 31.5041V39.1422C26.0931 39.7328 25.8582 40.299 25.4405 40.7167C25.0229 41.1343 24.4567 41.3692 23.8661 41.37ZM16.228 31.1859C16.1437 31.186 16.0628 31.2196 16.0032 31.2793C15.9435 31.3389 15.9099 31.4198 15.9098 31.5041V39.1422C15.9099 39.2265 15.9435 39.3074 16.0032 39.367C16.0628 39.4267 16.1437 39.4603 16.228 39.4604H23.8661C23.9504 39.4603 24.0313 39.4267 24.0909 39.367C24.1506 39.3074 24.1842 39.2265 24.1843 39.1422V31.5041C24.1842 31.4198 24.1506 31.3389 24.0909 31.2793C24.0313 31.2196 23.9504 31.186 23.8661 31.1859H16.228Z" fill="#E9105D"/>
+                                            </svg>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-0 fs-lg lh-sm ff-secondary fw-bolder">Top Features</h5>
+                                            <p class="mb-0 fs-lg-lg">Gain valuable insights by filtering</p>
+                                        </div>
+                                    </li>
+                                    <!-- Single Item -->
+                                    <li class="list-group-item d-flex align-items-center gap-3">
+                                        <span style="max-width: 40px;">
+                                            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="57" height="57" rx="9" fill="#FFE9F1"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M36.0353 32.9133C36.4829 32.9133 36.9204 33.0461 37.2925 33.2947C37.6646 33.5434 37.9546 33.8968 38.1259 34.3103C38.2972 34.7238 38.342 35.1788 38.2547 35.6177C38.1673 36.0567 37.9518 36.4599 37.6353 36.7763C37.3189 37.0928 36.9157 37.3083 36.4767 37.3956C36.0378 37.483 35.5828 37.4382 35.1693 37.2669C34.7558 37.0956 34.4024 36.8056 34.1537 36.4335C33.9051 36.0614 33.7724 35.6239 33.7723 35.1763C33.7729 34.5763 34.0116 34.0011 34.4358 33.5768C34.8601 33.1526 35.4353 32.9139 36.0353 32.9133ZM36.0353 38.4358C36.68 38.4358 37.3103 38.2446 37.8463 37.8864C38.3823 37.5282 38.8001 37.0191 39.0468 36.4235C39.2935 35.8279 39.3581 35.1725 39.2323 34.5402C39.1065 33.9078 38.796 33.327 38.3401 32.8712C37.8842 32.4153 37.3034 32.1049 36.6711 31.9791C36.0388 31.8534 35.3834 31.918 34.7878 32.1647C34.1921 32.4115 33.6831 32.8293 33.3249 33.3653C32.9668 33.9014 32.7756 34.5316 32.7757 35.1763C32.7768 36.0405 33.1207 36.8689 33.7317 37.4799C34.3428 38.0909 35.1712 38.4347 36.0353 38.4358ZM14.0977 34.6824H28.0738V36.4474C28.0739 36.5024 28.083 36.557 28.1009 36.6089L28.3274 37.2689H14.0977V34.6824ZM16.5589 26.3956H19.3175V33.6857H16.5589V26.3954V26.3956ZM24.5448 22.6563H27.3035V33.6857H24.5448V22.6561V22.6563ZM29.0703 34.2955V36.0573L30.6443 36.4455C30.7272 36.466 30.8033 36.5073 30.8656 36.5656C30.9279 36.6239 30.9741 36.6973 31 36.7786C31.0904 37.0626 31.2047 37.3386 31.3417 37.6033C31.3809 37.6791 31.4 37.7637 31.3973 37.849C31.3945 37.9342 31.37 38.0174 31.326 38.0905L30.487 39.4785L31.7328 40.7243L33.1212 39.885C33.1943 39.841 33.2775 39.8163 33.3627 39.8135C33.448 39.8107 33.5326 39.8297 33.6085 39.8689C33.8731 40.0062 34.1489 40.1207 34.433 40.2112C34.5143 40.237 34.5876 40.2833 34.6459 40.3455C34.7042 40.4078 34.7456 40.484 34.766 40.5668L35.1542 42.1408H36.9159L37.3044 40.5669C37.3248 40.4841 37.366 40.408 37.4242 40.3457C37.4824 40.2835 37.5556 40.2372 37.6368 40.2113C37.9211 40.1208 38.1972 40.0064 38.4621 39.8691C38.5379 39.8299 38.6225 39.8107 38.7077 39.8135C38.793 39.8162 38.8761 39.8408 38.9492 39.8848L40.3369 40.7238L41.5826 39.478L40.7442 38.0898C40.7001 38.0168 40.6754 37.9337 40.6725 37.8484C40.6696 37.7631 40.6886 37.6786 40.7277 37.6027C40.8651 37.338 40.9798 37.0621 41.0704 36.778C41.0963 36.6968 41.1425 36.6236 41.2047 36.5653C41.2669 36.5071 41.343 36.4658 41.4257 36.4453L43 36.057V34.2953L41.4256 33.9071C41.3429 33.8866 41.2668 33.8452 41.2046 33.7869C41.1424 33.7286 41.0962 33.6553 41.0704 33.5741C40.98 33.29 40.8656 33.0141 40.7285 32.7494C40.6892 32.6737 40.67 32.5891 40.6728 32.5038C40.6755 32.4186 40.7001 32.3354 40.7441 32.2624L41.5827 30.8747L40.337 29.6285L38.9489 30.4675C38.8758 30.5116 38.7927 30.5363 38.7074 30.5391C38.6221 30.5419 38.5375 30.5228 38.4617 30.4836C38.1971 30.3463 37.9212 30.2318 37.6372 30.1413C37.556 30.1154 37.4828 30.0691 37.4246 30.0068C37.3664 29.9446 37.3251 29.8684 37.3047 29.7857L36.9162 28.2115H35.5595L35.4864 28.2345C35.4707 28.2394 35.4548 28.2435 35.4388 28.2467L35.1298 28.3097L34.7661 29.7858C34.7457 29.8687 34.7043 29.9449 34.646 30.0071C34.5877 30.0694 34.5144 30.1157 34.4331 30.1415C34.1492 30.2319 33.8735 30.3462 33.6089 30.4833C33.5331 30.5226 33.4485 30.5418 33.3631 30.5391C33.2778 30.5363 33.1945 30.5117 33.1214 30.4676L31.7333 29.6286L30.4876 30.8749L31.3266 32.2626C31.3706 32.3357 31.3951 32.4189 31.3978 32.5042C31.4005 32.5895 31.3813 32.6741 31.3421 32.7498C31.205 33.0146 31.0907 33.2906 31.0004 33.5747C30.9745 33.656 30.9283 33.7293 30.866 33.7875C30.8037 33.8458 30.7275 33.8871 30.6447 33.9074L29.0707 34.2956L29.0703 34.2955ZM29.5558 19.306L33.4603 13.8594L37.3644 19.306H35.3379C35.2724 19.306 35.2076 19.3188 35.1471 19.3439C35.0866 19.3689 35.0317 19.4056 34.9854 19.4519C34.9391 19.4982 34.9024 19.5531 34.8774 19.6136C34.8523 19.6741 34.8395 19.7389 34.8395 19.8044V27.1284L34.5524 27.2627C34.4851 27.294 34.4258 27.34 34.3786 27.3972C34.3315 27.4545 34.2978 27.5216 34.28 27.5937L33.8325 29.412H33.3025L32.081 28.6739V19.8042C32.081 19.7387 32.0681 19.6739 32.0431 19.6134C32.018 19.5529 31.9813 19.4979 31.935 19.4517C31.8887 19.4054 31.8337 19.3687 31.7732 19.3436C31.7127 19.3186 31.6478 19.3058 31.5824 19.3058L29.5558 19.306Z" fill="#E9105D"/>
+                                            </svg>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-0 fs-lg lh-sm ff-secondary fw-bolder">Productivity</h5>
+                                            <p class="mb-0 fs-lg-lg">Gain valuable insights by filtering</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" class="offcanvas__link">Pricing</a></li>
+                <li><a href="#" class="offcanvas__link">Chrome Extension</a></li>
+                <li><a href="#"><span class="w-100 my-3 btn px-4 py-2 lh-xl btn-outline-dark">Login</span></a></li>
+                <li><a href="#"><span class="w-100 btn px-4 py-2 lh-xl btn-danger">Sign Up</span></a></li>
             </ul>
         </div>
       </div>
     <!--  // Hero Sections
     ================================================== -->
-    <section class="hero-section pb-10">
+    <section class="hero-section overflow-hidden pb-10">
         <span class="shape__1 wow" 
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
@@ -288,7 +385,7 @@
             
         <div class="container">
             <div class="row gy-7 align-items-center">
-                <div class="col-lg-6">
+                <div class="col-xl-6">
                     <div class="pt-6 pt-lg-10">
                         <h1 class="mb-5 ff-secondary fs-6xl fs-md-7xl fs-xxl-8xl type-split hero-title-type-split">Find Your Next Winning Product.</h1>
                         <p class="mb-5 fs-2xl pe-xl-6 wow" data-aos="fade-up" data-aos-delay="150">Gain an advantage over your competitors with Adsparo, the first AI powered Facebook ad spy tool. Quickly find your competitors' ads, gain insights into their products.</p>
@@ -316,7 +413,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-6 text-center text-lg-end">
+                <div class="col-xl-6 text-center text-lg-end">
                     <div class="hero-banner__svg">
                         <img data-parallax='{ "y" : 50}' src="../assets/svg/hero-banner/main.svg" alt="">
                         <img class="rocket wow" data-aos="fade-up" data-aos-delay="1000" src="../assets/images/rocket.png" alt="">
@@ -351,7 +448,7 @@
 
     <!--  // Adsparo features
     ================================================== -->
-    <section class="adsparo-features">
+    <section class="adsparo-features overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -368,7 +465,7 @@
                 gsap.from(".adsparo-type-split .char", {
                     scrollTrigger: {
                         trigger: '.adsparo-features',
-                    start: 'top 60%',
+                    start: 'top 80%',
                     toggleActions: "play none none reverse",
                     },
                     yPercent: 100, 
@@ -406,61 +503,61 @@
                                 <p>Refine your targeting and focus on the most relevant ads to boost your ROI.</p>
                             </div>
                             <div class="row g-2">
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="200">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="200">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Total Ads</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="300">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="300">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Category</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="400">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="400">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Country</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="500">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="500">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Date</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="600">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="600">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Media Type</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="700">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="700">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Language</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="800">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="800">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Platform</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="900">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="900">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Pixels</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="1000">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="1000">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Domain Tlds</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="1100">
+                                <div class="col-6 col-xxl-4 wow" data-aos="fade-in" data-aos-delay="1100">
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"></path></svg></span>
                                         <span>Adcopy</span>
@@ -471,9 +568,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-5 align-self-end">
-                    <div class="features-item__banner position-relative py-6 px-lg-5">
+                    <div class="features-item__banner position-relative py-6 px-lg-5 ps-6">
                         <span class="wow" data-aos="fade-in">
-                            <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid">
+                            <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="w-100 img-fluid">
                         </span>
                         <span class="shape__filter-activity wow" data-aos="fade-up" data-aos-delay="300">
                             <img src="../assets/images/filter-activity-shape.png" class="img-fluid" data-parallax='{ "y" : -20}'  alt="">
@@ -534,9 +631,9 @@
                             <path d="M813 1V377C813 404.614 790.614 427 763 427H19C9.05889 427 1 435.059 1 445V445" stroke="#7282FD" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
                         </svg>
                         <div class="features-item__banner features-item__banner-left">
-                            <div class="d-inline-block position-relative">
+                            <div class="d-block position-relative">
                                 <span class="wow" data-aos="fade-in">
-                                    <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid">
+                                    <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid w-100">
                                 </span>
                                 <span class="shape__sort-by wow" data-aos="fade-up" data-aos-delay="300">
                                     <img src="../assets/images/sort-by-shape.png" class="img-fluid" data-parallax='{ "y" : -20}'  alt="">
@@ -599,15 +696,13 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-xxl-5 align-self-end">
-                    <div class="features-item__banner  right-banner py-6 px-lg-5">
-                        <div class="d-inline-block position-relative">
-                            <span class="wow" data-aos="fade-in">
-                                <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid">
-                            </span>
-                            <span class="shape__filter-activity wow" data-aos="fade-up" data-aos-delay="300">
-                                <img src="../assets/images/search-by-shape.png" class="img-fluid" data-parallax='{ "y" : -20}'  alt="">
-                            </span>
-                        </div>
+                    <div class="features-item__banner position-relative py-6 px-lg-5 ps-6">
+                        <span class="wow" data-aos="fade-in">
+                            <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid w-100">
+                        </span>
+                        <span class="shape__filter-activity wow" data-aos="fade-up" data-aos-delay="300">
+                            <img src="../assets/images/search-by-shape.png" class="img-fluid" data-parallax='{ "y" : -20}'  alt="">
+                        </span>
                             
                     </div>
                 </div>
@@ -661,9 +756,9 @@
                             <path d="M813 1V377C813 404.614 790.614 427 763 427H19C9.05889 427 1 435.059 1 445V445" stroke="#7282FD" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5"/>
                         </svg>
                         <div class="features-item__banner features-item__banner-left">
-                            <div class="d-inline-block position-relative">
+                            <div class="d-block position-relative">
                                 <span class="wow" data-aos="fade-in">
-                                    <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid">
+                                    <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid w-100">
                                 </span>
                                 <span class="shape__analytics wow" data-aos="fade-up" data-aos-delay="300">
                                     <img src="../assets/images/analytics-shape.png" class="img-fluid" data-parallax='{ "y" : -20}'  alt="">
@@ -933,9 +1028,9 @@
                     <div class="position-relative h-100">
                         <div class="features-item__banner features-item__banner-left">
 
-                            <div class="d-inline-block position-relative">
+                            <div class="d-block position-relative">
                                 <span class="wow" data-aos="fade-in">
-                                    <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid">
+                                    <img src="../assets/images/features-1.png" data-parallax='{ "y" : 20}'  alt="" class="img-fluid w-100">
                                 </span>
                                 <span class="shape__productivity wow" data-aos="fade-up" data-aos-delay="300">
                                     <img src="../assets/images/productivity-shape.png" class="img-fluid" data-parallax='{ "y" : -20}'  alt="">
@@ -951,7 +1046,7 @@
 
     <!--  // Pricing
     ================================================== -->
-    <section class="pricing-area py-6 py-lg-10">
+    <section class="pricing-area overflow-hidden py-6 py-lg-10">
         
         <svg class="shape__1" width="155" height="144" viewBox="0 0 155 144" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M-43.3954 90.6315L-25.0191 106.743C-7.06147 122.487 20.8463 117.63 32.429 96.7447L53.6838 58.4186C59.4619 47.9995 74.5827 48.4161 79.7784 59.1375V59.1375C84.6489 69.1878 98.5038 70.3548 104.987 61.2608L130.837 25" stroke="white" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 12"/>
@@ -973,7 +1068,7 @@
             </div>
             <div class="row g-5">
                 <!-- Pricing -->
-                <div class="col-lg-4 wow" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-xl-4 wow" data-aos="fade-up" data-aos-delay="100">
                     <div class="pricing-card card h-100 text-dark border-white rounded-4 box-shadow-danger-soft">
                         <div class="card-body p-5 p-xxl-6">
                             <div class="mb-5 d-flex align-items-center gap-4">
@@ -1018,7 +1113,7 @@
                     </div>
                 </div>
                 <!-- Pricing -->
-                <div class="col-lg-4 wow" data-aos="fade-in" data-aos-delay="200">
+                <div class="col-md-6 col-xl-4 wow" data-aos="fade-in" data-aos-delay="200">
                     <div class="pricing-card card h-100 bg-danger text-white border-white rounded-4 box-shadow-danger-soft">
                         <div class="card-body p-5 p-xxl-6">
                             <div class="mb-5 d-flex align-items-center gap-4">
@@ -1063,7 +1158,7 @@
                     </div>
                 </div>
                 <!-- Pricing -->
-                <div class="col-lg-4 wow" data-aos="fade-in" data-aos-delay="300">
+                <div class="col-md-6 col-xl-4 wow" data-aos="fade-in" data-aos-delay="300">
                     <div class="pricing-card card h-100 border-white rounded-4 box-shadow-danger-soft">
                         <div class="card-body p-5 p-xxl-6">
                             <div class="mb-5 d-flex align-items-center gap-4">
@@ -1113,7 +1208,7 @@
 
     <!--  // Pricing 2
     ================================================== -->
-    <section class="pricing-area py-6 py-lg-10">
+    <section class="pricing-area overflow-hidden py-6 py-lg-10">
         
         <svg class="shape__1" width="155" height="144" viewBox="0 0 155 144" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M-43.3954 90.6315L-25.0191 106.743C-7.06147 122.487 20.8463 117.63 32.429 96.7447L53.6838 58.4186C59.4619 47.9995 74.5827 48.4161 79.7784 59.1375V59.1375C84.6489 69.1878 98.5038 70.3548 104.987 61.2608L130.837 25" stroke="white" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 12"/>
@@ -1130,7 +1225,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mb-8 text-center">
-                    <h2 class="ff-secondary fw-bold fs-6xl fs-lg-7xl">Get Ready For Big Profits</h2>
+                    <h2 class="ff-secondary fw-bold fs-5xl fs-lg-7xl">Get Ready For Big Profits</h2>
                     <p class="fs-xl-xl">Get Ready For Big Profits</p>
                 </div>
             </div>
@@ -1138,7 +1233,7 @@
                 <div class="col-lg-12">
                     <div class="pricing-card card h-100 border-white rounded-4 box-shadow-danger-soft card-body p-4 p-xxl-5">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="card h-100 border-danger bg-danger text-white rounded-4 p-5">
                                     <h2 class="fs-xl fs-lg-3xl">Available for</h2>
                                     <h2 class="mb-4 fs-2+-xl fs-xxl-4xl ff-secondary fw-bold">$399.00 USD<span class="fs-xl fw-medium ff-inter">/ month</span></h2>
@@ -1231,7 +1326,7 @@
                 <div class="col-xl-6">
                     <div class="py-12">
                         <div class="mb-7 pe-xl-10">
-                            <h5 class="mb-4 gradient-primary fw-bold ff-secondary fs-sm fs-xxl-xl text-uppercase px-3 bg-primary px-5 py-4 gap-3 d-inline-flex pe-10 wow" data-aos="fade-up" data-aos-delay="0">Google Chrome Extension <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h5>
+                            <h5 class="mb-4 gradient-primary fw-bold ff-secondary fs-sm fs-xxl-xl text-nowrap text-uppercase px-3 bg-primary px-5 py-4 gap-3 d-inline-flex pe-lg-10 wow" data-aos="fade-up" data-aos-delay="0">Google Chrome Extension <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h5>
                             <h2 class="mb-5 ff-secondary fw-bold fs-6xl fs-xxl-7xl wow" data-aos="fade-up" data-aos-delay="100">Find Any Website's Ads Using Our Chrome Extension</h2>
                             <p class="mb-5 fs-3xl pe-xl-7 wow" data-aos="fade-up" data-aos-delay="200">Using the AdSparo extension, find any website ads while browsing competitor websites with real time analytics.</p>
                         </div>
@@ -1259,12 +1354,12 @@
                 </div>
             </div>
         </div>
-        <div class="google-extension__banner-wrapper text-end text-xl-start">
+        <div class="google-extension__banner-wrapper text-end text-xl-start ps-7">
             
             <div class="google-extension__banner">
                 <span class="google-extension__downloads ff-secondary fw-bold">
-                    <div class="fs-4xl lh-sm">1k+</div>
-                    <div class="fs-md">Downloads</div>
+                    <div class="fs-xl fs-lg-4xl lh-sm">1k+</div>
+                    <div class="fs-xs fs-lg-md">Downloads</div>
                 </span>
                 <img src="../assets/images/google-extention-banner.png" alt="" class="img-fluid">
             </div>
@@ -1273,7 +1368,7 @@
 
     <!--  // Customer Reviews
     ================================================== -->
-    <section class="customer-reviews pt-10">
+    <section class="customer-reviews overflow-hidden pt-10">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -1283,6 +1378,81 @@
                     <div class="swiper" df-slider data-xl-items="3" data-lg-items="2" data-md-items="1" data-sm-items="1" data-xl-space="30" data-pagination=".customer-reviews-pagination">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide mb-7 h-auto wow" data-aos="fade-up" data-aos-delay="0">
+                                <div class="h-100 border border-primary border-opacity-10 rounded-4 pt-0 p-5 box-shadow-primary bg-white">
+
+                                    <svg width="74" height="37" viewBox="0 0 74 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_8_1345" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="74" height="37">
+                                        <rect width="74" height="37" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_8_1345)">
+                                        <path d="M74 0C74 9.81301 70.1018 19.2241 63.163 26.1629C56.2241 33.1018 46.813 37 37 37C27.187 37 17.7759 33.1018 10.8371 26.163C3.89821 19.2241 1.48172e-06 9.81302 0 5.58684e-06L37 0H74Z" fill="#B75DFD"/>
+                                        <path d="M27.0361 9.5785C28.7192 7.86737 31.266 7 34.6045 7H35.8041V10.1714L34.8397 10.3525C33.1962 10.6607 32.0529 11.2671 31.4411 12.157C31.1219 12.6364 30.9408 13.1853 30.9157 13.75H34.6045C34.9227 13.75 35.2278 13.8685 35.4528 14.0795C35.6778 14.2905 35.8041 14.5766 35.8041 14.875V22.75C35.8041 23.9909 34.7281 25 33.4049 25H26.2072C25.889 25 25.5839 24.8815 25.3589 24.6705C25.1339 24.4595 25.0075 24.1734 25.0075 23.875V18.25L25.0111 14.9661C25.0003 14.8413 24.7724 11.8825 27.0361 9.5785ZM46.6008 25H39.403C39.0849 25 38.7797 24.8815 38.5548 24.6705C38.3298 24.4595 38.2034 24.1734 38.2034 23.875V18.25L38.207 14.9661C38.1962 14.8413 37.9683 11.8825 40.232 9.5785C41.915 7.86737 44.4618 7 47.8004 7H49V10.1714L48.0355 10.3525C46.392 10.6607 45.2488 11.2671 44.637 12.157C44.3177 12.6364 44.1367 13.1853 44.1115 13.75H47.8004C48.1185 13.75 48.4237 13.8685 48.6486 14.0795C48.8736 14.2905 49 14.5766 49 14.875V22.75C49 23.9909 47.9239 25 46.6008 25Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                        
+                                    <h5 class="mt-4 mb-3 fw-bold fs-2xl ff-secondary">Jackson Dali</h5>
+                                    <div class="d-flex gap-1 align-items-center mb-4 text-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div>I've been using adsparo for a while now and have never been disappointed with it. It has helped me find the best ads in the market and made my company more profitable. It is a lot easier to find good ads with this app, especially when you feel like everyone else already has the good ones.</div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide mb-7 h-auto wow" data-aos="fade-up" data-aos-delay="200">
+                                <div class="h-100 border border-primary border-opacity-10 rounded-4 pt-0 p-5 box-shadow-primary bg-white">
+
+                                    <svg width="74" height="37" viewBox="0 0 74 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_8_1345" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="74" height="37">
+                                        <rect width="74" height="37" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_8_1345)">
+                                        <path d="M74 0C74 9.81301 70.1018 19.2241 63.163 26.1629C56.2241 33.1018 46.813 37 37 37C27.187 37 17.7759 33.1018 10.8371 26.163C3.89821 19.2241 1.48172e-06 9.81302 0 5.58684e-06L37 0H74Z" fill="#B75DFD"/>
+                                        <path d="M27.0361 9.5785C28.7192 7.86737 31.266 7 34.6045 7H35.8041V10.1714L34.8397 10.3525C33.1962 10.6607 32.0529 11.2671 31.4411 12.157C31.1219 12.6364 30.9408 13.1853 30.9157 13.75H34.6045C34.9227 13.75 35.2278 13.8685 35.4528 14.0795C35.6778 14.2905 35.8041 14.5766 35.8041 14.875V22.75C35.8041 23.9909 34.7281 25 33.4049 25H26.2072C25.889 25 25.5839 24.8815 25.3589 24.6705C25.1339 24.4595 25.0075 24.1734 25.0075 23.875V18.25L25.0111 14.9661C25.0003 14.8413 24.7724 11.8825 27.0361 9.5785ZM46.6008 25H39.403C39.0849 25 38.7797 24.8815 38.5548 24.6705C38.3298 24.4595 38.2034 24.1734 38.2034 23.875V18.25L38.207 14.9661C38.1962 14.8413 37.9683 11.8825 40.232 9.5785C41.915 7.86737 44.4618 7 47.8004 7H49V10.1714L48.0355 10.3525C46.392 10.6607 45.2488 11.2671 44.637 12.157C44.3177 12.6364 44.1367 13.1853 44.1115 13.75H47.8004C48.1185 13.75 48.4237 13.8685 48.6486 14.0795C48.8736 14.2905 49 14.5766 49 14.875V22.75C49 23.9909 47.9239 25 46.6008 25Z" fill="white"/>
+                                        </g>
+                                    </svg>
+
+                                    <h5 class="mt-4 mb-3 fw-bold fs-2xl ff-secondary">Samantha Miriam</h5>
+                                    <div class="d-flex gap-1 align-items-center mb-4 text-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div>Adsparo has been a game-changer for my business! Its user-friendly interface and powerful search filters make it easy to find high-performing ads, so I can stay ahead of the competition and optimize my own campaigns.</div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide mb-7 h-auto wow" data-aos="fade-up" data-aos-delay="300">
+                                <div class="h-100 border border-primary border-opacity-10 rounded-4 pt-0 p-5 box-shadow-primary bg-white">
+
+                                    <svg width="74" height="37" viewBox="0 0 74 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_8_1345" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="74" height="37">
+                                        <rect width="74" height="37" fill="#D9D9D9"/>
+                                        </mask>
+                                        <g mask="url(#mask0_8_1345)">
+                                        <path d="M74 0C74 9.81301 70.1018 19.2241 63.163 26.1629C56.2241 33.1018 46.813 37 37 37C27.187 37 17.7759 33.1018 10.8371 26.163C3.89821 19.2241 1.48172e-06 9.81302 0 5.58684e-06L37 0H74Z" fill="#B75DFD"/>
+                                        <path d="M27.0361 9.5785C28.7192 7.86737 31.266 7 34.6045 7H35.8041V10.1714L34.8397 10.3525C33.1962 10.6607 32.0529 11.2671 31.4411 12.157C31.1219 12.6364 30.9408 13.1853 30.9157 13.75H34.6045C34.9227 13.75 35.2278 13.8685 35.4528 14.0795C35.6778 14.2905 35.8041 14.5766 35.8041 14.875V22.75C35.8041 23.9909 34.7281 25 33.4049 25H26.2072C25.889 25 25.5839 24.8815 25.3589 24.6705C25.1339 24.4595 25.0075 24.1734 25.0075 23.875V18.25L25.0111 14.9661C25.0003 14.8413 24.7724 11.8825 27.0361 9.5785ZM46.6008 25H39.403C39.0849 25 38.7797 24.8815 38.5548 24.6705C38.3298 24.4595 38.2034 24.1734 38.2034 23.875V18.25L38.207 14.9661C38.1962 14.8413 37.9683 11.8825 40.232 9.5785C41.915 7.86737 44.4618 7 47.8004 7H49V10.1714L48.0355 10.3525C46.392 10.6607 45.2488 11.2671 44.637 12.157C44.3177 12.6364 44.1367 13.1853 44.1115 13.75H47.8004C48.1185 13.75 48.4237 13.8685 48.6486 14.0795C48.8736 14.2905 49 14.5766 49 14.875V22.75C49 23.9909 47.9239 25 46.6008 25Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                    
+                                    <h5 class="mt-4 mb-3 fw-bold fs-2xl ff-secondary">Monsef Moustaji</h5>
+                                    <div class="d-flex gap-1 align-items-center mb-4 text-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div>I absolutely love AdSparo! It has saved me so much time and energy by allowing me to quickly and easily find the top trending ads, I also love being able to save the ads to my account and finding similar ads on Adsparo Website, the Photo Editor, and filtering options by platforms like Shopify and Woocommerce, etc are very helpful.</div>
+                                </div>
+                            </div>
                             <!-- Slides -->
                             <div class="swiper-slide mb-7 h-auto wow" data-aos="fade-up" data-aos-delay="0">
                                 <div class="h-100 border border-primary border-opacity-10 rounded-4 pt-0 p-5 box-shadow-primary bg-white">
@@ -1370,11 +1540,11 @@
 
     <!--  // Growing Industry
     ================================================== -->
-    <section class="growing-industry py-12">
+    <section class="growing-industry overflow-hidden py-12">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
-                    <h2 class="mb-7 text-center fs-xxl-7xl ff-secondary fw-bold">Start Selling In A Rapidly Growing Industry</h2>
+                    <h2 class="mb-7 text-center fs-xxl-7xl ff-secondary fw-bold wow" data-aos="fade-up">Start Selling In A Rapidly Growing Industry</h2>
                 </div>
             </div>
             <div class="row">
@@ -1542,7 +1712,7 @@
 
     <!--  // Footer Area
     ================================================== -->
-    <footer class="footer-area pb-3 pt-4 pt-lg-7 bg-primary-light">
+    <footer class="footer-area overflow-hidden pb-3 pt-4 pt-lg-7 bg-primary-light">
         <section class="footer-nav">
             <div class="container">
                 <div class="row gy-5">

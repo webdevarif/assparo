@@ -79,6 +79,10 @@
         }, 1200);
     });
 
+    $(".offcanvas__dropdown").on('click', function (event) {
+        $(this).find('.offcanvas__dropdown-menu').slideToggle('active');
+    });
+
 
 //map trigger
 

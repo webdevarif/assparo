@@ -2,3 +2,34 @@
     padding: 13px 0px;
 }
 
+.header-area{
+
+    .navbar-brand{
+        max-width: 8rem;
+        @include media-breakpoint-up(lg){
+            max-width: 50%;
+        }
+    }
+}
+
+
+/* Off Canvas */
+.offcanvas{
+
+
+    &-header{}
+
+    .navbar-brand{
+        max-width: 7rem;
+    }
+
+    &__link{
+        color: $gray-600;
+        @extend .text-decoration-none, .fs-xl, .py-2, .lh-xl, .d-flex, .align-items-center;
+
+        &:hover, &.active{
+            color: $primary;
+        }
+    }
+
+} 
