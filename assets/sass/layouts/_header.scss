@@ -10,6 +10,22 @@
             max-width: 50%;
         }
     }
+
+    .has-megamenu .dropdown-menu{
+        top: calc(100% + 10px);
+        transition: all 0.2s ease-in-out;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        &.show{
+            top: 100%;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: inherit;
+        }
+    }
 }
 
 

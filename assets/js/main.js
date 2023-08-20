@@ -5,29 +5,29 @@
 	"use strict";
       
 	$(window).on('load', function () {
-        preloader();
+        // preloader();
 		aosAnimation();
 	});
 
 
-    $(document).ready(function() {
-        if (window.matchMedia("(min-width: 991px)").matches) {
-            $('.has-megamenu').hover(function() {
-                $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(200);
-                }, function() {
-                $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(200);
-            });
-        }
-    });
+    // $(document).ready(function() {
+    //     if (window.matchMedia("(min-width: 991px)").matches) {
+    //         $('.has-megamenu').hover(function() {
+    //             $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(200);
+    //             }, function() {
+    //             $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(200);
+    //         });
+    //     }
+    // });
     
 
 	/*=============================================
 		=    		 Preloader			      =
 	=============================================*/
-    function preloader() {
-        // Code to run when the document is ready.
-        $("#preloader").css({ left: "100%" });
-    }
+    // function preloader() {
+    //     // Code to run when the document is ready.
+    //     $("#preloader").css({ left: "100%" });
+    // }
 
 	/*=============================================
 		=    		 Swiper Slider			      =
@@ -111,5 +111,5 @@ setTimeout(() => {
 }
 
 myMega();
-	
+
 })(jQuery);
