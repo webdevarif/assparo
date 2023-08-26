@@ -33,11 +33,15 @@ svg, img {
 // List Social
 .list-social{
     .list-social-item{
-        @extend .d-inline-flex, .align-items-center, .justify-content-center, .bg-dark, .text-white, .rounded-circle, .fs-2xl;
-        min-width: 52px;
-        width: 52px;
-        height: 52px;
+        @extend .d-inline-flex, .align-items-center, .justify-content-center, .bg-dark, .text-white, .rounded-circle,  .fs-sm, .fs-xxl-2xl;
+        min-width: var(--social-icons-size, 40px);
+        width: var(--social-icons-size, 40px);
+        height: var(--social-icons-size, 40px);
         @include transition();
+
+        @include media-breakpoint-up(xxl){
+            --social-icons-size: 52px;
+        }
 
         &:hover{
             @extend .bg-danger;

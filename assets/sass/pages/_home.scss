@@ -137,6 +137,11 @@
     &__icon{
         @extend .d-inline-block, .position-relative, .mt-4;
         
+        @include media-breakpoint-between(xl, xxl){
+            max-width: 5vw;
+            min-width: 40px;
+        }
+        
         @include media-breakpoint-between(md, xl){
             max-width: 5vw;
             min-width: 40px;
@@ -293,7 +298,7 @@
         position: relative;
         justify-content: end;
 
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(lg){
             position: absolute;
             right: 0;
             bottom: 0;
@@ -331,7 +336,7 @@
         border-radius: 50%;
         z-index: 1;
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(xl){
             --google-extension-download-size: 120px;
         }
 

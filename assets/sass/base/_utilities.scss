@@ -102,3 +102,12 @@
 .check-icon{
     min-width: 20px;
 }
+.megamenu-icon svg,
+.megamenu-icon img{
+    width: 40px;
+    height: auto;
+
+    @include media-breakpoint-up(xxl){
+        width: 57px;
+    }
+}
